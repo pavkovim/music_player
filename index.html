@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="wrapper"> <!--WRAPPER START--> 
+
+        <div class="top-bar"> <!--TOP-BAR START--> 
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons">more_horiz</i>
+        </div> <!--TOP-BAR END--> 
+
+        <div class="img-area"> <!--IMG-AREA START--> 
+            <img src="" alt="">
+        </div> <!--IMG-AREA END--> 
+
+        <div class="song-details"> <!--SONG-DETAILS START--> 
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div> <!--SONG-DETAILS END--> 
+
+        <div class="progress-area"> <!--PROGRESS-AREA START--> 
+            <!--PROGRESS-BAR START--> <div class="progress-bar"> </div> <!--PROGRESS-BAR END--> 
+
+            <div class="timer"> <!--TIMER START--> 
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+            </div> <!--TIMER START--> 
+
+            <!--AUDIO START--> <audio id="main-audio" src=""></audio> <!--AUDIO END-->
+
+        </div> <!--PROGRESS-AREA END--> 
+            <div class="controls"> <!--CONTROLS START--> 
+                <i id="repeat-plist" class="material-icons">repeat</i>
+                <i id="prev" class="material-icons">skip_previous</i>
+                    <div class="play-pause"> <!--PLAY-PAUSE START--> 
+                        <i class="material-icons">play_arrow</i>
+                    </div> <!--PLAY-PAUSE START--> 
+                <i id="next" class="material-icons">skip_next</i>
+                <i id="more-music" class="material-icons">queue_music</i>
+            </div> <!--CONTROLS START--> 
+
+        <div class="music-list"> <!--MUSIC LIST START-->
+            <div class="header"> <!--HEADER START-->
+                <div class="row"> <!--ROW START-->
+                    <i class="material-icons">queue_music</i>
+                    <span>Music List</span>
+                </div> <!--ROW END-->
+                <i id="close" class="material-icons">close</i>
+            </div> <!--HEADER END-->
+
+            <ul> <!--UL START-->
+            </ul> <!--UL END-->
+        </div> <!--MUSIC LIST END-->
+    </div> <!--WRAPPER END--> 
+
+</body>
+
+
+<script src="js/music-list.js"></script>
+<script src="js/script.js"></script>
+
+</html>
